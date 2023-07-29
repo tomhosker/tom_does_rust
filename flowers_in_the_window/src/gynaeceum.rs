@@ -52,7 +52,7 @@ impl Gynaeceum {
             return false;
         }
 
-        let selected_id = available.choose(&mut rand::thread_rng()).unwrap();
+        let selected_id = available.choose(&mut rand::thread_rng());
         let selected = self.females.entry(&selected_id);
 
         selected.copulate();
