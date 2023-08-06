@@ -41,6 +41,10 @@ impl Female {
         return result;
     }
 
+    pub fn set_age(&mut self, new_age_in_days: i32) {
+        self.age_in_days = new_age_in_days;
+    }
+
     pub fn can_copulate(&mut self) -> bool {
         if
             self.is_pregnant ||
@@ -96,9 +100,5 @@ impl Female {
 
     pub fn get_id(&mut self) -> i32 {
         return self.id;
-    }
-
-    pub fn get_age(&mut self) -> i32 {
-        return self.age_in_days;
     }
 }

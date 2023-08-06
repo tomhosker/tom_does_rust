@@ -3,7 +3,6 @@
 // Declare local modules.
 mod female;
 mod gynaeceum;
-mod ticket_machine;
 mod utils;
 
 /// This is where the magic happens.
